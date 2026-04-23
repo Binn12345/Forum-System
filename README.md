@@ -117,10 +117,4 @@ MIT License
 
 ---
 
-## 🙌 Contributing
-
-Fork, improve, and submit pull requests.
-
----
-
 Happy coding! 🚀
