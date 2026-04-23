@@ -1,4 +1,11 @@
-forum-system/
+forum_system/
+│
+├── assets/
+│   ├── css/
+│   │    └── style.css
+│   ├── js/
+│   │    └── main.js
+│   └── img/
 │
 ├── config/
 │   └── db.php
@@ -6,32 +13,42 @@ forum-system/
 ├── auth/
 │   ├── login.php
 │   ├── register.php
-│   ├── process_login.php
-│   ├── process_register.php
-│   └── logout.php
+│   ├── logout.php
 │
 ├── admin/
-│   ├── dashboard.php
-│   ├── users.php
-│   └── posts.php
+│   ├── index.php              (admin dashboard)
+│   ├── posts.php             (all posts management)
+│   ├── create_post.php       (admin post)
+│   ├── delete_post.php
+│   └── users.php             (optional user management)
 │
 ├── user/
-│   ├── dashboard.php
-│   ├── post.php
-│   └── profile.php
+│   ├── profile.php
+│   └── settings.php
 │
-├── api/  ← REAL-TIME PART
-│   ├── fetch_posts.php
-│   ├── fetch_comments.php
-│   ├── add_post.php
-│   ├── add_comment.php
-│   └── like_post.php
+├── posts/
+│   ├── create.php            (user create post)
+│   ├── delete.php
+│   └── edit.php
 │
-├── assets/
-│   ├── css/
-│   ├── js/
-│   │   └── app.js
-│   └── img/
+├── feed/
+│   └── index.php            (MAIN WALL / FEED)
 │
-├── index.php
-└── .htaccess
+├── notifications/
+│   ├── index.php
+│   ├── fetch.php            (AJAX load)
+│   └── mark_read.php
+│
+├── api/
+│   ├── like.php
+│   ├── comment.php
+│   └── post.php
+│
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── navbar.php
+│   └── functions.php
+│
+├── index.php                (redirect to feed)
+└── database.sql

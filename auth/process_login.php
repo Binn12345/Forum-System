@@ -25,12 +25,19 @@ if ($user) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['role'] = $user['role'];
         $_SESSION['username'] = $user['username'];
+            $_SESSION['user'] = $user['username'];
+
+        // $_SESSION['user'] = [
+        //     'id' => $user['id'],
+        //     'role' => $user['role'],
+        //     'username' => $user['username']
+        // ];
 
         // ROUTING
         if ($user['role'] == 'admin') {
             header("Location: ../admin/dashboard.php");
         } else {
-            header("Location: ../user/dashboard.php");
+            header("Location: ../user/home.php");
         }
 
     } else {
