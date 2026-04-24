@@ -7,7 +7,7 @@ function loadPosts(){
 }
 
 // AUTO REFRESH EVERY 3 SECONDS
-setInterval(loadPosts, 3000);
+setInterval(loadPosts, 1500);
 
 
 function createPost(){
@@ -32,7 +32,7 @@ function loadPosts(){
 }
 
 // AUTO REFRESH (REAL TIME)
-setInterval(loadPosts, 3000);
+setInterval(loadPosts, 1500);
 
 
 const textarea = document.getElementById("postContent");
